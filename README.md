@@ -37,7 +37,7 @@ or
 yarn
 ```
 
-##Running the Project
+## Running the Project
 Now that you have configured the environment and installed the dependencies, you can run the project on an emulator or physical device. Ensure that your emulator or device is configured correctly.
 
 To run the application on an Android emulator, use the following command:
@@ -75,14 +75,14 @@ yarn start
 
 Now, the application should be displayed on your emulator or physical device.
 
-##Features
-####Task Search
+## Features
+#### Task Search
 The search functionality allows users to search for existing tasks in the list.
 
-####Create Task
+#### Create Task
 Users can create new tasks to add to the list. Create a task creation form that allows users to enter task details such as title and description.
 
-####Update Completed Task
+#### Update Completed Task
 Users should be able to mark a task as completed or unmark it.
 
 ####Delete Task
