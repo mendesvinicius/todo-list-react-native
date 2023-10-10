@@ -15,14 +15,13 @@ To begin development with React Native, you need to set up your development envi
 Clone the project repository:
 
 ```bash
-git clone https://seu-repositorio.git
+git clone https://github.com/mendesvinicius/todo-list-react-native.git
 ```
-
 
 Navigate to the project folder:
 
 ```bash
-cd nome-do-projeto
+cd todo-list-react-native
 ```
 
 Install project dependencies:
