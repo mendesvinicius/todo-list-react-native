@@ -45,7 +45,7 @@ const List: React.FC<ListProps> = ({
       return Toast.show({
         type: 'error',
         text1:
-          'O dispositivo se encontra offline e por isso não é possivel criar novas atividades',
+          'The device is offline, and therefore, it is not possible to create new tasks.',
       });
     }
 

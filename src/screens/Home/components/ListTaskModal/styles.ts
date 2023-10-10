@@ -37,11 +37,13 @@ export const Status = styled.View<StatusStyledProps>`
 `;
 
 export const StatusText = styled.Text`
+  color: ${({ theme }) => theme.colors.textPrimary};
   font-weight: 600;
   color: #262626;
 `;
 
 export const Description = styled.Text`
+  color: ${({ theme }) => theme.colors.textPrimary};
   font-size: 14px;
 `;
 

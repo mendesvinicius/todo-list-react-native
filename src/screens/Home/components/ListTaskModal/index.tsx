@@ -31,7 +31,7 @@ const ListTaskModal: React.FC<ListTaskModalProps> = ({
         return Toast.show({
           type: 'error',
           text1:
-            'O dispositivo se encontra offline e por isso não é possivel criar novas atividades',
+            'The device is offline, and therefore, its not possible to create new tasks',
         });
       }
       if (task && task.id) await taskDelete(task.id);
