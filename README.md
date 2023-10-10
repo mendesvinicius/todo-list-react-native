@@ -85,8 +85,8 @@ Users can create new tasks to add to the list. Create a task creation form that 
 #### Update Completed Task
 Users should be able to mark a task as completed or unmark it.
 
-####Delete Task
+#### Delete Task
 Users should be able to delete tasks from the list when they are no longer needed.
 
-####Conclusion
+#### Conclusion
 This React Native project provides a task list with essential task management features. You can expand and enhance the application by adding more features such as due dates, task categories, or reminders. Explore the source code and customize it according to your needs.
