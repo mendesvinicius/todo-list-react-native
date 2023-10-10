@@ -1,31 +1,31 @@
-# Documentação do Projeto React Native - Todo-List com Zustand
+# React Native Project Documentation - Todo-List with Zustand
 
-## Introdução
-Este é um projeto React Native de um aplicativo de lista de tarefas (Todo-List) que utiliza o estado global gerenciado pelo Zustand. Nesta documentação, você encontrará informações sobre como configurar o ambiente de desenvolvimento para o React Native, executar o projeto e entender as principais funcionalidades implementadas.
+## Introduction
+This is a React Native project for a task list (Todo-List) app that utilizes global state management with Zustand. In this documentation, you will find information on setting up the development environment for React Native, running the project, and understanding the main implemented features.
 
-## Configuração do Ambiente
-### Pré-requisitos
-Para começar a desenvolver com React Native, você precisa configurar seu ambiente de desenvolvimento. Certifique-se de ter o seguinte instalado:
+## Environment Setup
+### Prerequisites
+To begin development with React Native, you need to set up your development environment. Make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/en)
 - [npm (Node Package Manager)](https://www.npmjs.com/)
 - [React Native CLI](https://reactnative.dev/docs/environment-setup)
 
-### Configuração do Projeto
-Clone o repositório do projeto:
+### Project Configuration
+Clone the project repository:
 
 ```bash
 git clone https://seu-repositorio.git
 ```
 
 
-Navegue até a pasta do projeto:
+Navigate to the project folder:
 
 ```bash
 cd nome-do-projeto
 ```
 
-Instale as dependências do projeto:
+Install project dependencies:
 
 ```bash
 npm install
@@ -37,11 +37,10 @@ or
 yarn
 ```
 
-##Executando o Projeto
+##Running the Project
+Now that you have configured the environment and installed the dependencies, you can run the project on an emulator or physical device. Ensure that your emulator or device is configured correctly.
 
-Agora que você configurou o ambiente e instalou as dependências, pode executar o projeto em um emulador ou dispositivo físico. Certifique-se de que seu emulador ou dispositivo esteja configurado corretamente.
-
-Para executar o aplicativo em um emulador Android, use o seguinte comando:
+To run the application on an Android emulator, use the following command:
 
 ```bash
 npm run android
@@ -53,7 +52,7 @@ or
 yarn android
 ```
 
-Para executar o aplicativo em um emulador iOS, use o seguinte comando:
+To run the application on an iOS emulator, use the following command:
 
 ```bash
 npm run ios
@@ -63,7 +62,7 @@ or
 yarn ios
 ```
 
-Se preferir, você pode iniciar o Metro Bundler separadamente:
+If you prefer, you can start the Metro Bundler separately:
 
 ```bash
 npm start
@@ -74,20 +73,20 @@ or
 yarn start
 ```
 
-Agora, o aplicativo deve ser exibido em seu emulador ou dispositivo físico.
+Now, the application should be displayed on your emulator or physical device.
 
-##Funcionalidades
-####Buscar Tarefas
-A funcionalidade de busca permite ao usuário pesquisar tarefas existentes na lista. Implemente esta funcionalidade usando filtros ou pesquisa em tempo real.
+##Features
+####Task Search
+The search functionality allows users to search for existing tasks in the list.
 
-####Criar Tarefa
-Os usuários podem criar novas tarefas para adicionar à lista. Crie um formulário de criação de tarefa que permita aos usuários inserir detalhes da tarefa, como título e descrição.
+####Create Task
+Users can create new tasks to add to the list. Create a task creation form that allows users to enter task details such as title and description.
 
-####Atualizar Tarefa Concluída
-Os usuários devem ser capazes de marcar uma tarefa como concluída ou desmarcá-la. Implemente um sistema de marcação de tarefas como concluídas, mantendo um estado atualizado em Zustand.
+####Update Completed Task
+Users should be able to mark a task as completed or unmark it.
 
-####Deletar Tarefa
-Permita que os usuários excluam tarefas da lista quando não forem mais necessárias. Implemente um mecanismo de exclusão que remova a tarefa do estado global.
+####Delete Task
+Users should be able to delete tasks from the list when they are no longer needed.
 
-####Conclusão
-Este projeto React Native oferece uma lista de tarefas com funcionalidades essenciais para gerenciamento de tarefas. Você pode expandir e aprimorar o aplicativo adicionando mais recursos, como datas de vencimento, categorias de tarefas ou lembretes. Explore o código-fonte e personalize-o de acordo com suas necessidades. Divirta-se desenvolvendo seu aplicativo Todo-List com Zustand!
+####Conclusion
+This React Native project provides a task list with essential task management features. You can expand and enhance the application by adding more features such as due dates, task categories, or reminders. Explore the source code and customize it according to your needs.
