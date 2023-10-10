@@ -8,7 +8,7 @@ class TaskApi {
         params: { page },
       });
       return tasksData;
-    } catch (error: any) {
+    } catch (error) {
       throw new Error(error.message);
     }
   }
@@ -17,7 +17,7 @@ class TaskApi {
     try {
       const { data: taskData } = await getClient().post(`api/tasks/`, taskBody);
       return taskData;
-    } catch (error: any) {
+    } catch (error) {
       throw new Error(error.message);
     }
   }
@@ -25,7 +25,7 @@ class TaskApi {
   public static update(id: string, check: boolean) {
     try {
       getClient().put(`api/tasks/${id}`, { check });
-    } catch (error: any) {
+    } catch (error) {
       throw new Error(error.message);
     }
   }
@@ -33,7 +33,7 @@ class TaskApi {
   public static async delete(id: string) {
     try {
       await getClient().delete(`api/tasks/${id}`);
-    } catch (error: any) {
+    } catch (error) {
       throw new Error(error.message);
     }
   }

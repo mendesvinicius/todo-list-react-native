@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Header from '../../components/Header';
 import List from '../../components/List';
 import { TodoList, Container, ContainerButton } from './styles';
@@ -8,10 +8,13 @@ import CreateTaskModal from './components/CreateTaskModal';
 import { useTask } from '../../hooks/Task';
 import ListTaskModal from './components/ListTaskModal';
 import ListSkeleton from '../../components/List/skeleton';
-import { MMKV } from 'react-native-mmkv';
+import { Task } from '../../hooks/Task/interfaces';
 
 const PAGE = 1;
-const storage = new MMKV();
+
+interface ItemProps {
+  item: Task;
+}
 
 const Home: React.FC = () => {
   const { fetchTask, tasks, meta } = useTask();
@@ -24,15 +27,11 @@ const Home: React.FC = () => {
   const openModalListTask = () => modaListTaskRef.current?.open();
   const closeModalListTask = () => modaListTaskRef.current?.close();
 
-  const x = () => {
-    const value = storage.getString('app-store-persist');
-    return value ?? null;
-  };
   useEffect(() => {
-    fetchTask(meta?.currentPage || 1);
+    fetchTask(meta?.currentPage || PAGE);
   }, []);
 
-  const renderTodoList = ({ item }: any) => {
+  const renderTodoList = (item: Task) => {
     const props = {
       ...item,
       openModalListTask,
@@ -50,7 +49,7 @@ const Home: React.FC = () => {
       <TodoList
         ListHeaderComponent={Header}
         data={tasks}
-        renderItem={renderTodoList}
+        renderItem={({ item }) => renderTodoList(item as Task)}
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={ListSkeleton}
         onEndReached={handleEndReached}

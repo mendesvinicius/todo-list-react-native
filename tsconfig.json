@@ -3,6 +3,7 @@
   "compilerOptions": {
     "jsx": "react",
     "skipLibCheck": true,
+    "useUnknownInCatchVariables": false
   },
   "imports": ["src/**"],
   "exclude": ["node_modules"]
