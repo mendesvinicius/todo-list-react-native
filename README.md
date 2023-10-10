@@ -39,6 +39,8 @@ yarn
 ## Running TODO LIST API
 The application contains an integration with a [Node server](https://github.com/mendesvinicius/todo-list-api), so in order to be successful in the application's operations, it is necessary to configure this server to run first.
 
+After following all the steps to run the server, it's necessary to insert the base URL in the getClient.
+
 ## Running the Project
 Now that you have configured the environment and installed the dependencies, you can run the project on an emulator or physical device. Ensure that your emulator or device is configured correctly.
 
